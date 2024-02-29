@@ -1,0 +1,14 @@
+body{
+    margin: 0;padding: 0;
+}
+
+.main-div{
+    display: flex;
+    flex-direction: row;
+    max-width: 80%;
+    margin: 0 auto;
+    /* font-size: medium; */
+}
+.logo-name{
+    font-size: 1.5rem;
+}
