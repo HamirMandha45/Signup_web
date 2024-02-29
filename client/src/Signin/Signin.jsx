@@ -47,6 +47,7 @@ function Signin() {
       // setLoading(false);
       // setError(true);
       dispatch(signInFailure(error))
+      setErrorMsg(error.error)
     }
   }
   return (

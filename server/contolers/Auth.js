@@ -33,7 +33,7 @@ const Login = async (req, res, next) => {
         const token = jwt.sign({ id: validUser._id }, process.env.JWT_SECRET);
         const { password: hasedPassword, ...rest } = validUser._doc;
         res
-            .cookie('access_token', token, { httpOnly: true, maxAge:3600})
+            .cookie('access_token', token, { httpOnly: true, maxAge:3600000})
             .status(200)
             .json(rest);
     } catch (error) {
